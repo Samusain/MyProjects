@@ -49,7 +49,7 @@ const Header = () => {
             </label>
 
 
-            <div className="dropdown">
+            {/* <div className="dropdown">
             <div className='name'>
                 <ul>
                     <li><a href='#'>Product</a>
@@ -82,7 +82,7 @@ const Header = () => {
                 <Link to="/details" className='signup'>Sign Up</Link>
             </div>
             </div>
-            </div>
+            </div> */}
         </nav>
     </header>
   )
