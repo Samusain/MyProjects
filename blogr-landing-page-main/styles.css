@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Light-red /*(CTA text)*/: hsl(356, 100%, 66%);
+    --Very-light-red /*(CTA hover background)*/: hsl(355, 100%, 74%);
+    --Very-dark-blue /*(headings)*/: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue /*(footer text)*/: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue /*(body copy)*/: hsl(207, 13%, 34%);
+    --Very-dark-black-blue /*(footer background)*/: hsl(240, 10%, 16%);
+    /* Background gradient - Intro/CTA mobile nav: */
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+    /* Background gradient - body: */
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+body {
+    display: grid;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+button {
+    font-family: "Overpass", sans-serif;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+}
+
+/* HEADER styling */
+header {
+    background-color: var(--Very-light-red);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 6rem;
+}
+
+.menubar {
+    display: flex;
+    font-family: "Overpass", sans-serif;
+}
+
+.menubar p {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--White);
+    float: left;
+    padding: 10px 20px;
+}
+
+.menubar ul {
+    float: left;
+}
+
+.menubar ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    color: var(--White);
+}
+
+.menubar ul li ul {
+    position: absolute;
+    display: none;
+    background-color: var(--Light-red);
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+.menubar ul li:hover ul{
+    display: block;
+}
+
+.menubar ul li ul li{
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.menubar ul li ul li a{
+    padding: 8px 14px;
+}
+
+.menubar ul li ul li a:hover {
+    background-color: var(--Very-light-red);
+}
+
+.loggins {
+    display: flex;
+}
+
+
+.login {
+    color: var(--White);
+    font-weight: 700;
+    border: 0;
+    background-color: var(--Very-light-red);
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+}
+
+.signup {
+    padding: 0.5rem 1.8rem;
+    border-radius: 20px;
+    border: 0;
+    color: var(--Light-red);
+    font-weight: 700;
+}
+
+.signup:hover {
+    color: var(--White);
+    background-color: var(--Light-red);
+}
+
+/* MAIN styling */
+/* 1st Section */
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Very-light-red);
+    padding: 7rem 0;
+    font-family: "Overpass", sans-serif;
+    border-radius: 0 0 0 50px;
+}
+
+.info {
+    display: block;
+    text-align: center;
+    color: var(--White);
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.intro p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+.intro-btn {
+    margin-top: 2.5rem;
+}
+
+.start {
+    padding: 0.5rem 1.2rem;
+    background-color: var(--White);
+    color: var(--Very-light-red);
+    margin-right: 1rem;
+}
+
+.start:hover {
+    color: var(--White);
+    background-color: var(--Light-red);
+}
+
+.more {
+    color: var(--White);
+    padding: 0.5rem 1.2rem;
+    background-color: var(--Very-light-red);
+    border: 1px solid var(--White);
+}
+
+.more:hover {
+    color: var(--Light-red);
+    background-color: var(--White);
+}
+
+/* 2nd Section */
+
+.future-dsn {
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.future-box {
+    margin: 6rem;
+}
+
+.future-box h2 {
+    color: var(--Very-dark-blue);
+    font-weight: 500;
+    text-align: center;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-weight: 500;
+    color: var(--Very-dark-blue);
+    margin-top: 3rem;
+}
+
+.editor p {
+    color: var(--Very-dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* 3rd Section  */
+
+.art {
+    background-color: var(--Very-dark-desaturated-blue);
+    border-radius: 0 50px 0 60px;
+    font-family: "Overpass", sans-serif;
+    max-height: 13%;
+}
+
+.phones {
+    height: auto;
+    width: 45%;
+    margin-top: -7rem;
+}
+
+.art-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 6rem;
+    padding: 4rem;
+}
+
+.state-art h2 {
+    color: var(--White);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.state-art p {
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* 4th Styling */
+
+.free {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.free-box {
+    display: flex;
+    flex-direction: row;
+    margin: 6rem 6rem 6rem 0;
+    justify-content: space-between;
+}
+
+.laptop {
+    width: 58%;
+    height: auto;
+    margin-top: -2rem;
+}
+
+/* FOOTER styling */
+
+footer {
+    background-color: var(--Very-dark-black-blue);
+    border-radius: 0 50px 0 0;
+}
+
+.footer {
+    color: var(--White);
+    margin: 6rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.footer ul li ul {
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.footer ul li ul li{
+    width: fit-content;
+    display: flex;
+}
+
+.footer ul li ul li a{
+    padding: 8px 14px;
+    font-weight: 300;
+}
+
+.footer ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--Grayish-blue);
+}
+
+.attribution p {
+    line-height: 1.5;
+}
+
+.attribution a { 
+    color: var(--Very-dark-desaturated-blue); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 37.5rem){
+
+    
+
+}
