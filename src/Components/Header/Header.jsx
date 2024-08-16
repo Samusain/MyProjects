@@ -39,8 +39,8 @@ const Header = () => {
                     </li>
                 </ul>
             <div className="loggins">
-                <Link to="myprojects/details" className='login'>Login</Link>
-                <Link to="myprojects/details" className='signup'>Sign Up</Link>
+                <Link to="details" className='login'>Login</Link>
+                <Link to="details" className='signup'>Sign Up</Link>
             </div>
             </div>
             <input type="checkbox" id="check"/>
