@@ -14,8 +14,8 @@ const Main = () => {
       <p>Grow your audience and build your online brand</p>
     </article>
     <div className="intro-btn">
-      <Link to='/details' className="start">Start for Free</Link>
-      <Link to="/details" className="more">Learn More</Link>
+      <Link to='myprojects/details' className="start">Start for Free</Link>
+      <Link to="myprojects/details" className="more">Learn More</Link>
     </div>
   </section>
 

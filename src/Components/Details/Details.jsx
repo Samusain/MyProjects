@@ -10,7 +10,7 @@ const Details = () => {
     <Mainlayout>
         <div>
             <h1>Still In Progress...</h1> 
-            <Link to="/"><p>Home</p></Link>
+            <Link to="/myprojects"><p>Home</p></Link>
         </div>
     </Mainlayout>
   )
