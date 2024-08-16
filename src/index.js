@@ -7,7 +7,7 @@ import Details from './Components/Details/Details'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/myprojects/",
     element: <App/>
   },
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   //   element: <Start/>
   // },
   {
-    path: "/details",
+    path: "myprojects/details",
     element: <Details/>
   }
 ])
