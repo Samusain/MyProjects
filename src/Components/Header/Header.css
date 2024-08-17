@@ -13,7 +13,7 @@ nav {
     font-family: "Overpass", sans-serif;
 }
 
-.name{
+.menu{
     display: flex;
     justify-content: space-between;
 }
@@ -69,7 +69,6 @@ nav {
 }
 
 .loggins {
-    
     margin: auto;
 }
 
@@ -102,42 +101,125 @@ nav {
     background-color: var(--Light-red);
 }
 
-.checkbtn {    
-    color: var(--White);
-    float: right;
-    /* line-height: 80px;
-    margin-right: 40px; */
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-.material-symbols-outlined {
-    font-size: 40px;
-}
 
 @media screen and (max-width: 37.5rem){
-    nav {
-        margin: 2rem 3rem;
+    .menubar p {
+        font-size: 55px;
     }
     
-    .checkbtn {
+    nav {
+        margin: 2rem ;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: var(--White);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 7rem;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sidebar ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .sidebar ul li a {
+        color: var(--Very-dark-black-blue);
+        font-weight: 700;
+    }
+
+    .sidebar a {
+        font-size: 25px;
+        width: 100%;
+    }
+    
+    .sidebar ul li ul {
+        display: none;
+        background-color: var(--Grayish-blue);
+        padding: 10px;
+        border-radius: 10;
+        margin-top: 1rem;
+    }
+    
+    .menubtn{
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 9%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    .closebtn {
+        display: block;
+        width: 7%;
+        height: auto;
+        text-align: end;
+        
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+    
+    .sidebar .loggins {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid var(--Very-dark-black-blue);
+    }
+
+    .login {
+        background-color: var(--White);
+        text-align: center;
+        margin: 0.8rem auto;
+        color: var(--Very-dark-black-blue);
+    }
+    
+    .signup {
+        color: var(--White);
+        background-color: var(--Very-light-red);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .menubtn {
         display: block;
     }
-
-    /* ul {
-        
-    }
-
-    .menubar ul li {
-        
-    }
-
-    .menubar ul li a {
-        
-    } */
 
 }
