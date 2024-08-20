@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/myprojects/static/css/main.6f804660.css",
-    "main.js": "/myprojects/static/js/main.17c42724.js",
+    "main.css": "/myprojects/static/css/main.a68b2cd3.css",
+    "main.js": "/myprojects/static/js/main.da7c8530.js",
     "static/media/illustration-phones.svg": "/myprojects/static/media/illustration-phones.fd23559f1d2f81f9e3f3340eeaf2467c.svg",
     "static/media/logo.svg": "/myprojects/static/media/logo.1591bc20b914c098a9cd6e423b1623c3.svg",
     "static/media/illustration-laptop-desktop.svg": "/myprojects/static/media/illustration-laptop-desktop.799209c2628b1f244e1512cc686f0162.svg",
     "static/media/illustration-editor-desktop.svg": "/myprojects/static/media/illustration-editor-desktop.c6c8050aa4dcf0c64b4406570c970d2b.svg",
     "index.html": "/myprojects/index.html",
-    "static/media/icon-close.svg": "/myprojects/static/media/icon-close.c6580312401807bc9f98867a80e2bc37.svg",
-    "static/media/icon-hamburger.svg": "/myprojects/static/media/icon-hamburger.2759f81afb5c1fd4698dba258cf2f1e6.svg",
-    "main.6f804660.css.map": "/myprojects/static/css/main.6f804660.css.map",
-    "main.17c42724.js.map": "/myprojects/static/js/main.17c42724.js.map"
+    "main.a68b2cd3.css.map": "/myprojects/static/css/main.a68b2cd3.css.map",
+    "main.da7c8530.js.map": "/myprojects/static/js/main.da7c8530.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f804660.css",
-    "static/js/main.17c42724.js"
+    "static/css/main.a68b2cd3.css",
+    "static/js/main.da7c8530.js"
   ]
 }
