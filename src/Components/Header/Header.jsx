@@ -38,10 +38,10 @@ const Header = () => {
                 <div className="menu" id="Menu">
                     <ul>
                         <li>
-                            <a to="details">Product</a>
+                            <a to="*">Product</a>
                             <ul>
                                 <li>
-                                    <a to="details">Overview</a>
+                                    <a to="*">Overview</a>
                                 </li>
                                 <li>
                                     <a to="details">Pricing</a>

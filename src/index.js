@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import App from './App';
 import Details from './Components/Details/Details'
+import NoPage from './Components/NoPage/NoPage'
 
 
 const router = createBrowserRouter([
   {
     path: "/myprojects/",
     element: <App/>
+  },
+  {
+    path: "*",
+    element: <NoPage/>
   },
   {
     path: "/myprojects",

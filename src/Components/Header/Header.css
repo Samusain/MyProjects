@@ -25,15 +25,11 @@ header {
     padding: 0.5rem;
 }
 
-
-.menu ul {
-    float: left;
-}
-
 .menu li {
     float: left;
     list-style: none;
     position: relative;
+    display: flex;
 }
 
 .menu ul li a {
@@ -44,15 +40,19 @@ header {
 }
 
 .menu ul li ul {
-    /* position: absolute; */
+    position: absolute;
     display: none;
     background-color: var(--Light-red);
     padding: 10px;
     border-radius: 0 0 4px 4px;
+    top: 3rem;
 }
 
 .menu ul li:hover ul{
     display: block;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .menu ul li ul li{
@@ -107,13 +107,12 @@ header {
 }
 
 .burger-menu {
-    display: flex;
+    display: none;
     position: relative;
     align-items: center;
     justify-content: center;
     padding: 1rem;
     cursor: pointer;
-    /* background-color: purple; */
 }
 
 .burger{
@@ -197,11 +196,10 @@ header {
     }
     
     .menu > ul li ul {
-        /* position: relative; */
+        position: relative;
         background-color: var(--Grayish-blue);
-        padding: 10px;
         border-radius: 10;
-        margin-top: 1rem;
+        top: -1rem;
         text-align: center;
     }
 
